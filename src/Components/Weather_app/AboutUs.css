@@ -1,0 +1,47 @@
+.about-us-container {
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff; /* White background */
+  color: #333333; /* Dark text color */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Ensure the container takes full width */
+  max-width: 800px; /* Limit maximum width if needed */
+}
+
+.about-us-container h2 {
+  color: #007bff; /* Blue color for heading */
+}
+
+.query-box {
+  margin-bottom: 20px; /* Add margin bottom to separate from search button */
+  margin-top: 30px;
+}
+
+.query-box input[type='text'] {
+  padding: 10px;
+  width: 100%; /* Expand input to full width */
+  border: 1px solid #007bff; /* Blue border */
+  border-radius: 5px;
+}
+
+.query-box button {
+  padding: 10px 20px;
+  background-color: #007bff; /* Blue button background */
+  color: #ffffff; /* White text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.query-box button:hover {
+  background-color: #0056b3; /* Darker shade of blue on hover */
+}
+
+/* Additional styling for map container if needed */
+.map-container {
+  margin-top: 20px;
+  /* Add styles for the map container */
+}

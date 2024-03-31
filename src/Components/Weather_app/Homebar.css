@@ -1,0 +1,70 @@
+.homeContainer {
+  margin: 0;
+  height: auto; /* Adjust height as needed */
+  background-color: blue;
+  padding: 10px;
+}
+
+.header {
+  color: white;
+  
+}
+
+.imgSkycast {
+  position: relative;
+  width: 1000px;
+}
+
+.homeimg{
+
+  margin-left: -700px;
+  
+}
+.homeimg img {
+  width: 60px; /* Adjust the width of the image */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 500px; /* Add margin to create space between the image and the SkyCast heading */
+  border-radius: 20px;
+}
+
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 200px;
+}
+
+.navbar button {
+  border-radius: 20px;
+  box-shadow: 0px 2px 4px rgba(5, 5, 3, 0.1);
+  color: blue;
+  border: none;
+  font-size: 20px;
+  font-weight: 400;
+  cursor: pointer;
+  width: 200px;
+}
+
+.footer {
+  background-color: blue;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.facebook,
+.insta,
+.whatsapp {
+  padding-top: 30px;
+}
+
+.renderArea {
+  margin-top: 20px; /* Add margin to separate from header */
+  padding: 10px; /* Add padding to provide space between content and container edges */
+  background-color: white; /* Example background color */
+  border-radius: 10px; /* Add border-radius for rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box-shadow for depth */
+  overflow: hidden; /* Ensure content doesn't overflow */
+}

@@ -1,0 +1,17 @@
+.weather-radar-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .weather-radar-container h2 {
+    color: #007bff; /* Blue color for heading */
+    text-align: center;
+  }
+  
+  .weather-radar-container img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
