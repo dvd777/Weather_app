@@ -6,6 +6,7 @@ import LoginSignup from "./Components/LoginSignup/LoginSignup";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import Homebar from "./Components/Weather_app/Homebar";
+import WeatherNewsPage from "./Components/Weather_app/WeatherNewsPage"; // Import WeatherNewsPage component
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
           <Route path="/" element={<Homebar />}>
             <Route path="aboutus" element={<AboutUs />} />
             <Route path="loginsignup" element={<LoginSignup />} />
+            <Route path="weathernews" element={<WeatherNewsPage />} />{" "}
+            {/* Add WeatherNewsPage component route */}
           </Route>
         </Routes>
       </Router>
