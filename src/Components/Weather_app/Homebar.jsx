@@ -4,7 +4,7 @@ import "./Homebar.css";
 import WeatherApp from "./Weather_app";
 import AboutUs from "./AboutUs";
 import LoginSignup from "../LoginSignup/LoginSignup";
-import WeatherNewsPage from "./WeatherNewsPage"; // Import WeatherNewsPage component
+import WeatherNewsPage from "./WeatherNewsPage";
 import facebook_img from "../Assets/Facebook_icon.jpeg";
 import inst_img from "../Assets/insta.jpeg";
 import what_img from "../Assets/whatsapp.jpg";
@@ -46,20 +46,17 @@ function Homebar() {
           </Link>
           <Link to="/weathernews">
             {" "}
-            {/* Add link to WeatherNewsPage */}
             <button onClick={() => handleComponentChange("WeatherNewsPage")}>
-              Weather News
+              CityWeather Hub
             </button>
           </Link>
         </div>
       </div>
       <div className="renderArea">
-        {/* Render component based on selectedComponent state */}
         {selectedComponent === "WeatherApp" && <WeatherApp />}
         {selectedComponent === "AboutUs" && <AboutUs />}
         {selectedComponent === "LoginSignup" && <LoginSignup />}
         {selectedComponent === "WeatherNewsPage" && <WeatherNewsPage />}{" "}
-        {/* Render WeatherNewsPage component */}
       </div>
       <div className="footer">
         <div className="facebook">
@@ -97,6 +94,7 @@ function Homebar() {
           />
         </div>
       </div>
+      <div className="Copyright">©SKYCAST</div>
     </div>
   );
 }

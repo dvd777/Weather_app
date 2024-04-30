@@ -12,15 +12,14 @@ function EmergencyAlertsPage() {
   let y = 0;
 
   useEffect(() => {
-    // Fetch radar data from OpenWeatherMap API
     const fetchRadarData = async () => {
       try {
         const response = await fetch(
           `https://tile.openweathermap.org/map/${layer}/${z}/${x}/${y}.png?appid=${api_key}`
         );
         const data = await response.json();
-        // Assuming radar image URL is included in the response
-        setRadarUrl(data.radarImageUrl); // Adjust this based on actual API response
+
+        setRadarUrl(data.radarImageUrl);
       } catch (error) {
         console.error("Error fetching radar data:", error);
       }

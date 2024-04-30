@@ -1,4 +1,4 @@
-/* styles.css */
+
 
 .blog-container {
     max-width: 800px;
@@ -6,7 +6,7 @@
     padding: 20px;
   }
   
-  h1, h2 {
+   h2 {
     color: blue;
   }
   
