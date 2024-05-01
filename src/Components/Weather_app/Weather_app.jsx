@@ -11,23 +11,27 @@ import wind_img from "../Assets/wind.png";
 import { useState } from "react";
 
 function WeatherApp() {
+  // API key for OpenWeatherMap API
   let api_key = "1eb1adba70dc1e7df193ee3b2589d331";
 
+  // State for storing live weather image
   const [liveimg, setLiveimg] = useState(cloud_img);
-
+  // Function to fetch weather data from OpenWeatherMap API
   async function Search() {
+    // Get the input element for location search
     const element = document.getElementsByClassName("locationInput");
-
+    // Check if input is empty
     if (element[0].value === "") {
       return 0;
     }
     try {
+      // Construct URL for API request
       let url = `https://api.openweathermap.org/data/2.5/weather?q=${element[0].value}&units=Metric&appid=${api_key}`;
-
+      // Fetch weather data from API
       let response = await fetch(url);
-
+      // Parse response to JSON format
       let data = await response.json();
-
+      // Update weather information based on API response
       const humidity = document.getElementsByClassName("humidity");
       const wind = document.getElementsByClassName("windSpeed");
       const temp = document.getElementsByClassName("weather_temp");
@@ -37,7 +41,7 @@ function WeatherApp() {
       wind[0].innerHTML = data.wind.speed + "Km/h";
       temp[0].innerHTML = data.main.temp + "°c";
       location[0].innerHTML = data.name;
-
+      // Update live weather image based on weather condition
       if (data.weather[0].icon === "01d" || data.weather[0].icon === "01n") {
         setLiveimg(clear_img);
       } else if (
@@ -74,6 +78,7 @@ function WeatherApp() {
         setLiveimg(clear_img);
       }
     } catch (error) {
+      // Log and alert in case of error fetching weather data
       console.error("Error fetching weather data:", error);
       alert("sorry something went wrong. make sure the spelling is correct");
     }

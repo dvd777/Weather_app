@@ -11,8 +11,10 @@ import what_img from "../Assets/whatsapp.jpg";
 import weatherHome_img from "../Assets/weather_logo.jpg";
 
 function Homebar() {
+  // State to manage the selected component
   const [selectedComponent, setSelectedComponent] = useState("WeatherApp");
 
+  // Function to handle component change based on button click
   const handleComponentChange = (componentName) => {
     setSelectedComponent(componentName);
   };
