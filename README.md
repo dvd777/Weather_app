@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+Weather App
+Description:
+This Weather App is a web application built using React.js that provides users with real-time weather information based on their location input. The app displays essential weather metrics such as temperature, humidity, and wind speed, and includes additional pages for users to learn about the app, sign up or log in, and view weather forecasts for major cities worldwide. 
+Features: 
+Location-based Weather Data: Users can input their location to retrieve current weather information, including temperature, humidity, and wind speed.
+Additional Pages: The app includes separate pages for About Us, Sign Up/Log In, and Weather Webcast, providing users with additional information and functionality. 
+Real-time Weather Data: The Weather Webcast page offers real-time weather data for major cities worldwide, allowing users to stay informed about weather conditions globally.
+Responsive Design: The app is designed to be responsive and accessible across different devices and screen sizes, ensuring a seamless user experience.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Development Tools and Platforms :
+Visual Studio Code: Visual Studio Code was chosen as the primary integrated development environment (IDE) for coding the website's frontend using React.js. Its rich feature set, including syntax highlighting, IntelliSense, and debugging capabilities, provided a conducive environment for efficient development.
+Figma : Figma was utilized for creating wireframes and designing the website's user interface, facilitating the visual planning and layout of the project. Figma's collaborative features allowed for seamless work and iteration during the design phase.
+OpenWeather API: The OpenWeather API was integrated into the project to fetch weather data. By leveraging the OpenWeather API, the Weather App was able to provide real-time weather information to users based on their location input.
+GitHub : GitHub  used for version control and collaboration, allowing for code management, issue tracking, and team collaboration. 
+JSX (JavaScript XML) : JSX (JavaScript XML) was employed within React components to render UI elements and structures, enabling a declarative and component-based approach to building the user interface. JSX allows for the seamless integration of HTML-like syntax within JavaScript code, making it easier to create and manage UI components in React applications. 
+CSS: Cascading Style Sheets (CSS) were used for styling the website's components and layouts, potentially utilizing preprocessor features such as variables, mixins, and nesting for enhanced styling capabilities. CSS is essential for controlling the visual presentation of web pages, including aspects such as layout, colors, fonts, and animations.
+React.js: React.js was utilized as the frontend JavaScript library for building interactive user interfaces. React.js is known for its component-based architecture, which allows us to break down complex UIs into smaller, reusable components. It also provides features such as state management and lifecycle methods, enabling us to create dynamic and responsive web applications with ease.
+React Hook Form : React Hook Form was used for form validation within the Weather App.  It provides a hook-based API for handling form submissions, field validation, and error handling, offering a streamlined approach to building forms with React.
+Netlify : was utilized for the deployment of the Weather App. Netlify offers a simple and seamless platform for deploying modern web projects, providing features such as continuous deployment, automatic HTTPS.
 
-## Available Scripts
+Live Deployment 
+The Weather App is deployed live and accessible at https://weather-app-dvd.netlify.app/
 
-In the project directory, you can run:
+Citations :
+The app utilizes the OpenWeatherMap API to fetch real-time weather data. Code snippets for API integration were adapted from the official OpenWeatherMap documentation.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
